@@ -2010,3 +2010,48 @@ img {
     width: 100%;
   }
 }
+
+/* ==========================================================================
+   PORTFOLIO MODAL MOBILE RESPONSIVE FIX
+   ========================================================================== */
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap; /* Mobile me auto next line par aane ke liye */
+}
+
+/* Screen 600px se choti hone par header aur buttons cleanly stack honge */
+@media (max-width: 600px) {
+  .modal-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 20px;
+  }
+
+  .modal-header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .modal-header .btn {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+
+  .demo-hero h1, 
+  .demo-hero h2 {
+    font-size: 1.4rem !important;
+    line-height: 1.3;
+  }
+
+  .demo-products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+}
